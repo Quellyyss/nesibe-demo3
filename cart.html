@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Корзина — Nesibe (Несібе)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="cart">
+  <div class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Nesibe <span style="opacity:.85">(Несібе)</span><small>Корзина</small></div>
+      </a>
+      <div class="nav-actions">
+        <span class="pill">Корзина: <span data-cart-pill><strong>0</strong> • 0 ₸</span></span>
+        <a class="btn btn-ghost" href="catalog.html">Каталог</a>
+        <a class="btn" href="checkout.html">Оформить</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <h2>Ваш заказ</h2>
+        <div class="toolbar">
+          <button class="btn btn-danger" data-cart-clear>Очистить</button>
+        </div>
+      </div>
+
+      <div class="section-body">
+        <div class="panel" data-cart-empty style="display:none;">
+          <b>Корзина пустая.</b>
+          <p class="muted">Перейдите в каталог и добавьте товары.</p>
+          <a class="btn" href="catalog.html">В каталог</a>
+        </div>
+
+        <div class="panel">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Товар</th>
+                <th>Цена</th>
+                <th>Кол-во</th>
+                <th>Сумма</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody data-cart-rows></tbody>
+          </table>
+
+          <hr class="sep" />
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap">
+            <div class="muted">Итого:</div>
+            <div style="font-size:18px; font-weight:900" data-cart-total>0 ₸</div>
+          </div>
+
+          <hr class="sep" />
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn" href="checkout.html">Оформить заказ</a>
+            <button class="btn btn-wa" data-wa>Заказать через WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">Демо-версия: корзина хранится в браузере (localStorage).</div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

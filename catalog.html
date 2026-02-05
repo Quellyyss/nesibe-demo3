@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Каталог — Nesibe (Несібе)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="catalog">
+  <div class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Nesibe <span style="opacity:.85">(Несібе)</span><small>Каталог товаров</small></div>
+      </a>
+      <div class="nav-actions">
+        <span class="pill">Корзина: <span data-cart-pill><strong>0</strong> • 0 ₸</span></span>
+        <a class="btn btn-ghost" href="cart.html">Корзина</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <h2>Каталог</h2>
+        <div class="toolbar">
+          <input class="input" data-search placeholder="Поиск по названию…" />
+          <select class="select" data-category></select>
+          <a class="btn btn-ghost" href="checkout.html">Оформить</a>
+        </div>
+      </div>
+      <div class="section-body">
+        <div class="grid" data-products></div>
+      </div>
+    </section>
+
+    <div class="footer">Демо: товары/цены примерные. Дальше заменим на реальные.</div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

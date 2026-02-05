@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nesibe (Несібе) — продуктовый магазин</title>
+  <meta name="description" content="Демо-версия интернет-магазина Nesibe (Несібе)" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          Nesibe <span style="opacity:.85">(Несібе)</span>
+          <small>Продукты рядом • демо-магазин</small>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <span class="pill">Корзина: <span data-cart-pill><strong>0</strong> • 0 ₸</span></span>
+        <a class="btn btn-ghost" href="catalog.html">Каталог</a>
+        <a class="btn" href="cart.html">Корзина</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="badge"><span class="badge-dot"></span>Принимаем заказы в WhatsApp</div>
+        <h1>Мини-маркет <span style="color:var(--acc2)">Nesibe</span> — онлайн</h1>
+        <p>Закажите продукты с доставкой. Добавляйте в корзину и отправляйте заказ в WhatsApp.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
+            <span class="pill">🕘 09:00–23:00</span>
+            <span class="pill">🚚 Доставка по району</span>
+            <span class="pill">📍 Алматы</span>
+        </div>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px">
+            <a class="btn btn-wa" href="checkout.html">Заказать в WhatsApp</a>
+            <a class="btn btn-ghost" href="tel:+447424514657">Позвонить</a>
+            <a class="btn btn-ghost" href="#contacts">Контакты</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="kpis">
+            <div class="kpi"><b>Продукты</b><span>Более 100 товаров</span></div>
+            <div class="kpi"><b>Доставка</b><span>По району за 30–60 мин</span></div>
+            <div class="kpi"><b>Самовывоз</b><span>Можно забрать в магазине</span></div>
+            <div class="kpi"><b>WhatsApp</b><span>Быстрое оформление</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Популярные товары (демо)</h2>
+        <a class="btn btn-ghost" href="catalog.html">Смотреть всё</a>
+      </div>
+      <div class="section-body">
+        <div class="grid" data-products>
+          <article class="card">
+            <div class="thumb">NESIBE</div>
+            <div class="card-body">
+              <div class="card-title">Молоко 2.5% 1л</div>
+              <div class="card-meta">
+                <span>Молочные</span>
+                <span class="price">520 ₸/шт</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="product.html?id=p1">Подробнее</a>
+              <button class="btn" data-add="p1">В корзину</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">NESIBE</div>
+            <div class="card-body">
+              <div class="card-title">Бананы</div>
+              <div class="card-meta">
+                <span>Овощи и фрукты</span>
+                <span class="price">850 ₸/кг</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="product.html?id=p4">Подробнее</a>
+              <button class="btn" data-add="p4">В корзину</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">NESIBE</div>
+            <div class="card-body">
+              <div class="card-title">Газировка 1.5л</div>
+              <div class="card-meta">
+                <span>Напитки</span>
+                <span class="price">520 ₸/шт</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="product.html?id=p9">Подробнее</a>
+              <button class="btn" data-add="p9">В корзину</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">NESIBE</div>
+            <div class="card-body">
+              <div class="card-title">Шоколад</div>
+              <div class="card-meta">
+                <span>Сладости</span>
+                <span class="price">560 ₸/шт</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="product.html?id=p10">Подробнее</a>
+              <button class="btn" data-add="p10">В корзину</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contacts">
+  <div class="section-head">
+    <h2>Контакты и местоположение</h2>
+    <span class="badge"><span class="badge-dot"></span>Мы на связи</span>
+  </div>
+
+  <div class="section-body">
+    <div class="row">
+      <div class="panel">
+        <h2 style="margin:0 0 10px;">Контакты</h2>
+        <p class="muted" style="margin:0 0 10px">
+          Телефон: <a href="tel:+4474245146570"><b>+447424514657</b></a><br/>
+          WhatsApp: <a href="https://wa.me/447424514657" target="_blank"><b>написать</b></a><br/>
+        </p>
+
+        <hr class="sep" />
+
+        <h2 style="margin:0 0 10px;">Адрес</h2>
+        <p class="muted" style="margin:0">
+          ул. Шоган Абыз улица, 406/1 <br/>
+          График: 09:00–23:00 <br/>
+          Доставка: по району (условия уточняются)
+        </p>
+      </div>
+
+      <div class="panel">
+        <h2 style="margin:0 0 10px;">Карта</h2>
+        <p class="muted small" style="margin-top:-6px">Вставь ссылку на 2GIS/Google Maps.</p>
+
+        <!-- Вариант 1: просто кнопка -->
+        <a class="btn btn-ghost" target="_blank" href="https://2gis.kz/almaty/firm/70000001041324584">Открыть в 2GIS</a>
+
+        <hr class="sep" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <div class="footer">© <span id="y"></span> Nesibe (Несібе) • demo build</div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
